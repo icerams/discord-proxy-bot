@@ -1,0 +1,30 @@
+# One pattern per line. Lines starting with # are comments and ignored.
+# Blank lines are ignored too.
+#
+# Plain text = matched as a case-insensitive substring anywhere in the message.
+# Lines wrapped in slashes, like /pattern/, are treated as regex (case-insensitive).
+
+# --- Direct requests to move the conversation elsewhere ---
+dm me
+message me
+pm me
+add me on
+add my
+hmu
+hit me up
+
+# --- Common contact-exchange platforms ---
+snapchat
+snap:
+instagram
+insta:
+kik
+telegram
+whatsapp
+discord.gg/
+
+# --- Phone numbers (US-style, various separators) ---
+/\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b/
+
+# --- Email addresses ---
+/\b[\w.+-]+@[\w-]+\.[a-z]{2,}\b/
